@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="viceMasterPage1.master.cs" Inherits="vice_viceMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>User</title>
+    <link href="../menu/bootstrap.css" rel="stylesheet" />
+    <link href="../menu/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 80%;
+        }
+
+        .auto-style2 {
+            text-align: center;
+            background-color: #003366;
+            color: #FFFFFF;
+        }
+        .auto-style3 {
+            font-size: medium;
+        }
+    </style>
+</head>
+<body style="background-image: url(../images/bgg.jpg)">
+    <form id="form1" runat="server">
+        <div>
+
+
+            <table align="center" class="auto-style1">
+                <tr style="text-align: center">
+                    <td>
+                        <p><img src="../images/dps_center.png"/></p></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2"><p class="auto-style3">Developed and Designed By : Abhinav Manohar of Class 10/D (Session : 2017/18 )</p></td>
+                </tr>
+            </table>
+
+
+        </div>
+    </form>
+</body>
+</html>

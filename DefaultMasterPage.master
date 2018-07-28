@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultMasterPage.master.cs" Inherits="DefaultMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+            background-color: #003163;
+            color: #FFFFFF;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .auto-style2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-image: url(images/bgg.jpg)">
+    <form id="form1" runat="server">
+        <div >
+            <table align="center">
+                <tr>
+                    <td class="auto-style2">
+                        <img src="images/dps_center.png" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1"><p>© Skoolniach Ltd. 2018, All Rights Reserved</p></td>
+                </tr>
+            </table>
+
+
+        </div>
+    </form>
+</body>
+</html>
